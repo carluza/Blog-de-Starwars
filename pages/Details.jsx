@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/styles.css";
+import { Link } from "react-router-dom";
 
 export const Details = () => {
   const { category, id } = useParams();
@@ -67,6 +68,9 @@ export const Details = () => {
           </li>
         ))}
       </ul>
+      <Link to={"/"}>
+        <button className="btn bg-secondary">Back</button>
+      </Link>
     </div>
   );
 };

@@ -28,7 +28,7 @@ export const Card = ({ src, title, id, category }) => {
               console.log(`🔗 Navigating to: /details/${category}/${id}`)
             }
           >
-            View
+            View details
           </Link>
 
           <button
