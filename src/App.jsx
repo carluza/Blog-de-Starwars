@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import { StarWarsProvider } from "../context/StarWarsContext";
-import { Home } from "../pages/Home";
-import { People } from "../pages/People";
-import { Planets } from "../pages/Planets";
-import { Vehicles } from "../pages/Vehicles";
-import { Details } from "../pages/Details";
+import { StarWarsProvider } from "./context/StarWarsContext";
+import { Home } from "./pages/Home";
+import { People } from "./pages/People";
+import { Planets } from "./pages/Planets";
+import { Vehicles } from "./pages/Vehicles";
+import { Details } from "./pages/Details";
 
 export const App = () => {
   return (

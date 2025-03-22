@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import { StarWarsProvider } from "../context/StarWarsContext";
+import { StarWarsProvider } from "./context/StarWarsContext";
 import { App } from "./App";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";

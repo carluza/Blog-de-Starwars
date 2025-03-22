@@ -1,20 +1,31 @@
 import React, { useContext } from "react";
 import { Card } from "../components/Card";
-import { NavBar } from "../components/navbar";
+import { NavBar } from "../components/NavBar";
 import { StarWarsContext } from "../context/StarWarsContext";
 import "../styles/styles.css";
 
+import luke from "../img/luke.png";
+import c3po from "../img/c3po.png";
+import r2d2 from "../img/r2d2.png";
+import darth from "../img/darth.png";
+import leia from "../img/leia.png";
+import owen from "../img/owen.png";
+import beru from "../img/beru.png";
+import r5d4 from "../img/r5d4.png";
+import biggs from "../img/biggs.png";
+import obiwan from "../img/obiwan.png";
+
 const peopleImages = {
-  "Luke Skywalker": "/img/luke.png",
-  "C-3PO": "/img/c3po.png",
-  "R2-D2": "/img/r2d2.png",
-  "Darth Vader": "/img/darth.png",
-  "Leia Organa": "/img/leia.png",
-  "Owen Lars": "/img/owen.png",
-  "Beru Whitesun lars": "/img/beru.png",
-  "R5-D4": "/img/r5d4.png",
-  "Biggs Darklighter": "/img/biggs.png",
-  "Obi-Wan Kenobi": "/img/obiwan.png",
+  "Luke Skywalker": luke,
+  "C-3PO": c3po,
+  "R2-D2": r2d2,
+  "Darth Vader": darth,
+  "Leia Organa": leia,
+  "Owen Lars": owen,
+  "Beru Whitesun lars": beru,
+  "R5-D4": r5d4,
+  "Biggs Darklighter": biggs,
+  "Obi-Wan Kenobi": obiwan,
 };
 
 export const People = () => {
@@ -30,7 +41,7 @@ export const People = () => {
               key={person.uid}
               id={person.uid || "N/A"}
               category="people"
-              src={peopleImages[person.name] || "/img/default.png"}
+              src={peopleImages[person.name] || defaultImage}
               title={person.name || "Cargando..."}
             />
           ))
